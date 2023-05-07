@@ -1,16 +1,11 @@
-# roman_web_portfolio
+# Roman Web Portfolio
 
-A new Flutter project.
+This is the companion project for the Flutter Web Codelab Series by Roman Just Codes.
 
-## Getting Started
+### If  you like this project, please don't forget to follow me on social media:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- On Twitter ([@drcoderz](https://www.twitter.com/drcoderz))
+- On YouTube ([Roman Just Codes](https://www.youtube.com/channel/UCKsp3r1ERjCpKJtD2n5WtPg))
+- On my [Personal Portfolio](https://romanjustcodes.web.app/)
+- On [Medium](https://medium.com/@romanejaquez)
+- On [LinkedIn](https://www.linkedin.com/in/roman-jaquez-8941a424/)
