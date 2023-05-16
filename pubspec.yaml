@@ -40,6 +40,8 @@ dependencies:
   flutter_animate: ^4.1.1+1
   url_launcher: ^6.1.10
   rive: ^0.10.4
+  cloud_firestore: ^4.7.0
+  firebase_core: ^2.12.0
 
 dev_dependencies:
   flutter_test:

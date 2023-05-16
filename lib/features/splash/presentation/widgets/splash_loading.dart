@@ -14,11 +14,11 @@ class SplashLoading extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          SizedBox(
+          const SizedBox(
             width: 60,
             height: 60,
             child: Stack(
-              children: const [
+              children: [
                 Center(
                   child: Icon(
                     Icons.account_circle, 

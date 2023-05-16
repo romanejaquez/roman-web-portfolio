@@ -13,7 +13,7 @@ class MockWelcomeRepository implements IWelcomeRepository {
         subTitle: 'Certified Cloud Architect',
         imgPath: 'https://avatars.githubusercontent.com/u/5081804?v=4',
         greetings: [
-          "hello","hola", "bonjour", "ciao"
+          "Hello","Hola", "Bonjour", "Ciao"
         ]
       );
     });
