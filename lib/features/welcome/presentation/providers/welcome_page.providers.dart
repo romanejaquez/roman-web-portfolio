@@ -16,8 +16,8 @@ final greetingsViewModelProvider = StateNotifierProvider<GreetingsViewModel, Str
 
 
 final welcomeRepositoryProvider = Provider<IWelcomeRepository>((ref) {
-  return MockWelcomeRepository();
-  // return WelcomeRepository(ref);
+  //return MockWelcomeRepository();
+  return WelcomeRepository(ref);
 });
 
 
