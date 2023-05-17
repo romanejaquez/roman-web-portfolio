@@ -8,11 +8,21 @@ import 'package:roman_web_portfolio/styles/colors.dart';
 class LeftNavigationViewModel extends StateNotifier<List<LeftNavigationItem>> {
 
   final Ref ref;
+
   LeftNavigationViewModel(List<LeftNavigationItem> items, this.ref) : super([]) {
     state = items;
+  }
 
-    var item = state.first;
-    selectNavItem(item);
+  void init() {
+    var selectedNavRoute = ref.read(webLocalStorageProvider).getSelectedNav();
+
+    if (selectedNavRoute.isNotEmpty) {
+      var item = state.where((i) => i.route == selectedNavRoute).first;
+      selectNavItem(item);
+    }
+    else {
+      selectNavItem(state.first);
+    }
   }
 
   void selectNavItem(LeftNavigationItem item) {
@@ -23,6 +33,7 @@ class LeftNavigationViewModel extends StateNotifier<List<LeftNavigationItem>> {
 
     ref.read(pageColorProvider.notifier).state = PersonalPortfolioColors.pageColor[item.route]!;
     ref.read(bgPageRouteProvider.notifier).state = item.route;
+    ref.read(webLocalStorageProvider).storeSelectedNav(item.route);
 
     state = [
       for (var element in state)

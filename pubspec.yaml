@@ -42,6 +42,7 @@ dependencies:
   rive: ^0.10.4
   cloud_firestore: ^4.7.0
   firebase_core: ^2.12.0
+  shared_preferences: ^2.1.1
 
 dev_dependencies:
   flutter_test:
