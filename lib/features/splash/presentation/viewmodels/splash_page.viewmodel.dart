@@ -13,8 +13,8 @@ class SplashPageViewModel {
   
   SplashPageViewModel(this.ref);
 
-  Future<bool> lazyloadPages() {
-    Completer<bool> lazyCompleter = Completer();
+  Future<bool> preloadPages() {
+    Completer<bool> preloadCompleter = Completer();
 
     Future.wait([
       ref.read(welcomeProvider.future),
@@ -23,13 +23,13 @@ class SplashPageViewModel {
       ref.read(githubProvider.future),
       ref.read(webpageProvider.future),
     ]).then((value) {
-      lazyCompleter.complete(true);
+      preloadCompleter.complete(true);
     }).catchError((error) {
-      lazyCompleter.completeError(error);
+      preloadCompleter.completeError(error);
     }).onError((error, stackTrace) {
-      lazyCompleter.completeError(error!);
+      preloadCompleter.completeError(error!);
     });
 
-    return lazyCompleter.future;
+    return preloadCompleter.future;
   }
 }

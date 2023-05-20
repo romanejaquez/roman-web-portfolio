@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:roman_web_portfolio/features/splash/presentation/providers/splash_page.providers.dart';
@@ -24,8 +25,12 @@ class SplashPage extends ConsumerWidget {
         loading: () => loadingMessage,
         error:(error, stackTrace) => ErrorNotification(message: error.toString()),
         data:(data) {
-          GoRouter.of(Utils.mainNav.currentContext!).go(WelcomePage.route);
-          return loadingMessage;
+
+            Future.delayed(1.seconds, () {
+              GoRouter.of(Utils.mainNav.currentContext!).go(WelcomePage.route);
+            });
+            
+            return loadingMessage;
         },
       )
     );

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:roman_web_portfolio/features/welcome/presentation/providers/welcome_page.providers.dart';
+import 'package:roman_web_portfolio/features/welcome/presentation/responsiveness/welcome_page_responsive.config.dart';
 import 'package:roman_web_portfolio/features/welcome/presentation/viewmodels/greetings_label.viewmodel.dart';
+import 'package:roman_web_portfolio/helpers/responsive_ui_helper.dart';
 
 class GreetingsLabel extends ConsumerStatefulWidget {
   const GreetingsLabel({super.key});
@@ -29,11 +31,13 @@ class GreetingsLabelState extends ConsumerState<GreetingsLabel> {
   @override
   Widget build(BuildContext context) {
 
+    var uiConfig = context.uiConfig<WelcomePageResponsiveConfig>();
+
     var greeting = ref.watch(greetingsViewModelProvider);
 
     return Text(greeting, style: 
-      const TextStyle(
-        fontSize: 100,
+      TextStyle(
+        fontSize: uiConfig.titleSize,
         fontWeight: FontWeight.bold,
         color: Colors.white
       )

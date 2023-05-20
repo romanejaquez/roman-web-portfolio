@@ -7,5 +7,5 @@ final splashPageViewModelProvider = Provider((ref) {
 
 final splashPageFutureProvider = FutureProvider<bool>((ref) {
   var splashVM = ref.read(splashPageViewModelProvider);
-  return splashVM.lazyloadPages();
+  return splashVM.preloadPages();
 });

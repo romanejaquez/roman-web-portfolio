@@ -17,3 +17,17 @@ enum DatabaseDocs {
   githubPage,
   webPage,
 }
+
+enum DeviceType {
+  mobile,
+  tablet,
+  desktop
+}
+
+enum PageConfigs {
+  welcome,
+  twitter,
+  linkedin,
+  github,
+  web
+}
