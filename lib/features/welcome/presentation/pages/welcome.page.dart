@@ -70,14 +70,17 @@ class WelcomePage extends ConsumerWidget {
               const GreetingsLabel(),
               Text.rich(
                 TextSpan(
-                style: TextStyle(fontSize: uiConfig.titleSize, color: Colors.white),
+                style: TextStyle(
+                  fontSize: uiConfig.titleSize, 
+                  color: Colors.white
+                ),
                 children: [
                     const TextSpan(text: "I'm "),
                     TextSpan(
                         text: welcomeData.name, 
-                        style: TextStyle(
-                          fontSize: uiConfig.titleSize, 
-                          fontWeight: FontWeight.bold)
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold
+                        )
                     ),
                   ]
                 ),
