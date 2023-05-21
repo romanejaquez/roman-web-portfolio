@@ -2,6 +2,8 @@
 
 This is the companion project for the Flutter Web Codelab Series by Roman Just Codes.
 
+![App](img1.gif)
+
 ### If  you like this project, please don't forget to follow me on social media:
 
 - On Twitter ([@drcoderz](https://www.twitter.com/drcoderz))
