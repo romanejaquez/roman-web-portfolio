@@ -7,7 +7,7 @@ import 'package:roman_web_portfolio/features/web/presentation/pages/web.page.dar
 import 'package:roman_web_portfolio/features/welcome/presentation/pages/welcome.page.dart';
 import 'package:roman_web_portfolio/styles/personal_portfolio_icons.dart';
 
-class MockNavigationRepository extends INavigationRepository {
+class MockNavigationRepository implements INavigationRepository {
     
   @override
   List<LeftNavigationItem> getDefaultNavItems() {
