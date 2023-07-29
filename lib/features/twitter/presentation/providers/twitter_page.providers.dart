@@ -5,8 +5,8 @@ import 'package:roman_web_portfolio/features/twitter/data/repositories/twitterre
 import 'package:roman_web_portfolio/features/twitter/presentation/viewmodels/twitterpageviewmodel.dart';
 
 final twitterRepositoryProvider = Provider<ITwitterRepository>((ref) {
-  //return MockTwitterRepository();
-  return TwitterRepository(ref);
+  return MockTwitterRepository();
+  //return TwitterRepository(ref);
 });
 
 final twitterViewModelProvider = Provider<TwitterPageViewModel>((ref) {

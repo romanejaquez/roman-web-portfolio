@@ -5,8 +5,8 @@ import 'package:roman_web_portfolio/features/linkedin/data/repositories/mock_lin
 import 'package:roman_web_portfolio/features/linkedin/presentation/viewmodels/linkedin_page.viewmodel.dart';
 
 final linkedInRpositoryProvider = Provider<ILinkedInRepository>((ref) {
-  return LinkedInRepository(ref);
-  //return MockLinkedInRepository();
+  //return LinkedInRepository(ref);
+  return MockLinkedInRepository();
 });
 
 final linkedInViewModelProvider = Provider<LinkedInPageViewModel>((ref) {

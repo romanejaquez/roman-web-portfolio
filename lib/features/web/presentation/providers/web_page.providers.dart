@@ -5,8 +5,8 @@ import 'package:roman_web_portfolio/features/web/data/repositories/web.repositor
 import 'package:roman_web_portfolio/features/web/presentation/viewmodels/web_page.viewmodel.dart';
 
 final webRepositoryProvider = Provider<IWebPageRepository>((ref) {
-  //return MockWebPageRepository();
-  return WebPageRepository(ref);
+  return MockWebPageRepository();
+  //return WebPageRepository(ref);
 });
 
 final webPageViewModelProvider = Provider<WebPageViewModel>((ref) {

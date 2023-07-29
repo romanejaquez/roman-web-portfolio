@@ -5,8 +5,8 @@ import 'package:roman_web_portfolio/features/github/data/repositories/mock_githu
 import 'package:roman_web_portfolio/features/github/presentation/viewmodels/github_page.viewmodel.dart';
 
 final githubRepositoryProvider = Provider<IGithubRepository>((ref) {
-  return GithubRepository(ref);
-  //return MockGithubRepository();
+  //return GithubRepository(ref);
+  return MockGithubRepository();
 });
 
 final githubViewModelProvider = Provider<GithubPageViewModel>((ref) {
